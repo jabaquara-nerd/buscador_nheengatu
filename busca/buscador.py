@@ -3,7 +3,11 @@
 from unidecode import unidecode
 import textgrid
 
+# from ui.web import camada_buscada
+
 # Definir camada de falantes
+
+
 FALANTE_1_TIER_1 = 0
 FALANTE_2_TIER_1 = 6
 
@@ -46,7 +50,7 @@ def extrair_corpus_falante(camada_falante, tg):
     ultimo_indice = len(tg[camada_falante])
     corpus_falante = []
 
-    # Alguns TextGrids tem apenas 1 falante e 6 camadas.
+    # Para evitar alguns TextGrids que tem apenas 1 falante e 6 camadas.
     if len(tg) > 10:
         for indice in range(0, ultimo_indice):
             intervalo = tg[camada_falante][indice]

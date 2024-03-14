@@ -31,8 +31,9 @@ class LaptopLenovo(Laptop):
 generico = Laptop()
 print(generico)
 
-# inspiron = LaptopDell()
-# inspiron.ascender()
+inspiron = LaptopDell()
+inspiron.ascender()
+inspiron._explodir()
 
 # carbonx = LaptopLenovo()
 # carbonx.ascender()
