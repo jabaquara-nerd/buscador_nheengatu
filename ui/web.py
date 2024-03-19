@@ -40,18 +40,25 @@ def server(input: Inputs, output: Outputs, session: Session):
 
         req(input.termo(), cancel_output=True)
 
+        req(input.camada_buscada())
+
         termo_input = input.termo()
+
+        camada_buscada_input = input.camada_buscada()
 
         contador_total = 0
 
-        relatorio = (
-            RelatorioGeral() if input.select() == "completo" else RelatorioSimples()
-        )
+        tipo_relatorio_input = input.select()
+
+        if tipo_relatorio_input == "completo":
+            relatorio = RelatorioGeral()
+        else:
+            relatorio = RelatorioSimples()
 
         for arquivo_textgrid in textgrids_lista:
             # Buscar textgrid
             contador, detalhes_ocorrencias, tg = processar_textgrid(
-                arquivo_textgrid, termo_input
+                arquivo_textgrid, termo_input, camada_buscada_input
             )
 
             # Atualizar os contadores

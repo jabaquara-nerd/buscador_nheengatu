@@ -101,8 +101,12 @@ class RelatorioSimples(RelatorioGeral):
             indice = ocorrencia["indice"]
             camada = ocorrencia["camada"]
 
-            for camada_indice in 0, 2, 4:
+            if 0 <= camada < 6:
+                camada = 0
+            else:
+                camada = 6
 
+            for camada_indice in 0, 2, 4:
                 self.conteudo.append(tg[camada + camada_indice][indice].mark)
                 self.conteudo.append("\n")
             self.conteudo.append("\n")
