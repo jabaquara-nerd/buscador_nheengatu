@@ -11,7 +11,7 @@ FALANTE_2_TIER_1 = 6
 
 
 def definir_camada(camada_buscada, falante_numero):
-    """."""
+    """Dados camada_buscada e falante_numero, retorna o número da camada a ser buscada."""
 
     if falante_numero == 1:
 
