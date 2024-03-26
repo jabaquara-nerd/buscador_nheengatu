@@ -4,8 +4,28 @@ from unidecode import unidecode
 import textgrid
 
 # Definir camada de falantes
+
+
 FALANTE_1_TIER_1 = 0
 FALANTE_2_TIER_1 = 6
+
+
+def definir_camada(camada_buscada, falante_numero):
+    """Dados camada_buscada e falante_numero, retorna o número da camada a ser buscada."""
+
+    if falante_numero == 1:
+
+        camada_base = FALANTE_1_TIER_1
+    else:
+        camada_base = FALANTE_2_TIER_1
+
+    match camada_buscada:
+        case "nheengatu":
+            return camada_base + 0
+        case "glosa":
+            return camada_base + 2
+        case "portugues":
+            return camada_base + 4
 
 
 def busca_termo_corpus_total(termo_buscado, corpus_total):
@@ -24,13 +44,16 @@ def busca_termo_corpus_total(termo_buscado, corpus_total):
     return contador, detalhes_ocorrencias
 
 
-def processar_textgrid(arquivo_textgrid, termo_input):
+def processar_textgrid(arquivo_textgrid, termo_input, camada_buscada_input):
     """Dados arquivo_textgrid, termo_input, processa o TextGrid."""
 
     tg = textgrid.TextGrid.fromFile(arquivo_textgrid)
 
-    corpus_falante_1 = extrair_corpus_falante(FALANTE_1_TIER_1, tg)
-    corpus_falante_2 = extrair_corpus_falante(FALANTE_2_TIER_1, tg)
+    camada_definida_falante_1 = definir_camada(camada_buscada_input, 1)
+    camada_definida_falante_2 = definir_camada(camada_buscada_input, 2)
+
+    corpus_falante_1 = extrair_corpus_falante(camada_definida_falante_1, tg)
+    corpus_falante_2 = extrair_corpus_falante(camada_definida_falante_2, tg)
     corpus_falantes_total = corpus_falante_1 + corpus_falante_2
 
     # Buscar textgrid
@@ -46,7 +69,7 @@ def extrair_corpus_falante(camada_falante, tg):
     ultimo_indice = len(tg[camada_falante])
     corpus_falante = []
 
-    # Alguns TextGrids tem apenas 1 falante e 6 camadas.
+    # Para evitar alguns TextGrids que tem apenas 1 falante e 6 camadas.
     if len(tg) > 10:
         for indice in range(0, ultimo_indice):
             intervalo = tg[camada_falante][indice]

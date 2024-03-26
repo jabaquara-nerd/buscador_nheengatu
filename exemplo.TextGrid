@@ -1,0 +1,368 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 20 
+tiers? <exists> 
+size = 12 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "1" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: transcrição" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "I'm an example" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "Ich bin ein Beispiel" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "2" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: segmentação" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "I am an example" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "Ich bin ein Beispiel" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "3" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: glosa em Língua1" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "1SG 1SG.ser INDF exemplo" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "1SG 1SG.ser INDF exemplo" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "4" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: glosa em Língua2" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "1SG 1SG.ser INDF ejemplo" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "1SG 1SG.ser INDF ejemplo" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "5" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: tradução em Língua 1" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "Eu sou um exemplo" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "Eu sou um exemplo" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [6]:
+        class = "IntervalTier" 
+        name = "6" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.527489180007446 
+            text = "" 
+        intervals [2]:
+            xmin = 0.527489180007446 
+            xmax = 2.1729133702531644 
+            text = "Falante1: tradução em Língua2" 
+        intervals [3]:
+            xmin = 2.1729133702531644 
+            xmax = 4.38948045831189 
+            text = "" 
+        intervals [4]:
+            xmin = 4.38948045831189 
+            xmax = 4.93439191700943 
+            text = "Soy un ejemplo" 
+        intervals [5]:
+            xmin = 4.93439191700943 
+            xmax = 5.920843801308086 
+            text = "" 
+        intervals [6]:
+            xmin = 5.920843801308086 
+            xmax = 6.375313524122216 
+            text = "Soy un ejemplo" 
+        intervals [7]:
+            xmin = 6.375313524122216 
+            xmax = 20 
+            text = "" 
+    item [7]:
+        class = "IntervalTier" 
+        name = "8" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: transcrição" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "Ixé yepé mayemaã" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
+    item [8]:
+        class = "IntervalTier" 
+        name = "9" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: segmentação" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "Ixé yepé mayemaã" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
+    item [9]:
+        class = "IntervalTier" 
+        name = "10" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: glosa em Língua1" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "1SG 1SG.ser INDF exemplo" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
+    item [10]:
+        class = "IntervalTier" 
+        name = "11" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: glosa em Língua2" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "1SG 1SG.ser INDF ejemplo" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
+    item [11]:
+        class = "IntervalTier" 
+        name = "12" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: tradução em Língua1" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "Eu sou um exemplo" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
+    item [12]:
+        class = "IntervalTier" 
+        name = "13" 
+        xmin = 0 
+        xmax = 20 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.838861656882065 
+            text = "" 
+        intervals [2]:
+            xmin = 2.838861656882065 
+            xmax = 4.231664389486564 
+            text = "Falante2: tradução em Língua2" 
+        intervals [3]:
+            xmin = 4.231664389486564 
+            xmax = 5.344277735051354 
+            text = "" 
+        intervals [4]:
+            xmin = 5.344277735051354 
+            xmax = 5.805530588056739 
+            text = "Soy un ejemplo" 
+        intervals [5]:
+            xmin = 5.805530588056739 
+            xmax = 20 
+            text = "" 
