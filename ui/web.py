@@ -5,6 +5,7 @@ from busca.buscador import processar_textgrid
 
 # from relatorio.relatorio_txt import gerar_relatorio
 from relatorio.relatorio_oop import RelatorioGeral, RelatorioSimples
+from relatorio.relatorio_template import RelatorioTemplate
 from utils import abrir_arquivos_dir
 
 
@@ -18,12 +19,13 @@ app_ui = ui.page_fluid(
     ui.input_radio_buttons(
         "select",
         "Selecione o tipo do relatório:",
-        {"simples": "Simples", "completo": "Completo"},
+        {"simples": "Simples", "completo": "Completo", "template": "Template"},
     ),
     ui.row(
         ui.column(
             6,
-            ui.output_text_verbatim("saida"),
+            # ui.output_text_verbatim("saida"),
+            ui.output_ui("saida"),
         ),
     ),
 )
@@ -35,7 +37,11 @@ textgrids_lista = abrir_arquivos_dir(".")
 
 def server(input: Inputs, output: Outputs, session: Session):
 
-    @render.text
+    # @render.text
+    #
+    # @reactive.event(input.add)
+
+    @render.ui
     def saida():
 
         req(input.termo(), cancel_output=True)
@@ -52,6 +58,8 @@ def server(input: Inputs, output: Outputs, session: Session):
 
         if tipo_relatorio_input == "completo":
             relatorio = RelatorioGeral()
+        elif tipo_relatorio_input == "template":
+            relatorio = RelatorioTemplate()
         else:
             relatorio = RelatorioSimples()
 
@@ -75,11 +83,14 @@ def server(input: Inputs, output: Outputs, session: Session):
             )
 
         def printar_relatorio():
-
-            saida_relatorio = "".join(map(str, relatorio.conteudo))
-            RelatorioGeral.conteudo = []
-
-            return saida_relatorio
+            if tipo_relatorio_input == "template":
+                saida_relatorio = relatorio.conteudo
+                return ui.TagList(ui.HTML(saida_relatorio))
+            else:
+                saida_relatorio = "".join(map(str, relatorio.conteudo))
+                RelatorioGeral.conteudo = []
+                # return ui.TagList(ui.output_text_verbatim(saida_relatorio))
+                return ui.TagList(ui.HTML(saida_relatorio.replace("\n", "<br>")))
 
         return printar_relatorio()
 
