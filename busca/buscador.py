@@ -1,4 +1,4 @@
-"""Processar e extrair as ocorrências."""
+"""Processamento e extração de ocorrências."""
 
 from unidecode import unidecode
 import textgrid
@@ -45,7 +45,7 @@ def busca_termo_corpus_total(termo_buscado, corpus_total):
 
 
 def processar_textgrid(arquivo_textgrid, termo_input, camada_buscada_input):
-    """Dados arquivo_textgrid, termo_input, processa o TextGrid."""
+    """Dados arquivo_textgrid, termo_input, e camada_buscada_input, processa o TextGrid."""
 
     tg = textgrid.TextGrid.fromFile(arquivo_textgrid)
 

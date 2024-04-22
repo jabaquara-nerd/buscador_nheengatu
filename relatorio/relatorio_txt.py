@@ -1,4 +1,4 @@
-"""Anotar e gerar relatório."""
+"""Anotação e produção do relatório."""
 
 
 def anotar_nome_do_arquivo_e_ocorrencias(relatorio, arquivo_textgrid, contador):

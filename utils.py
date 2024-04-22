@@ -1,3 +1,5 @@
+"""Utilitários."""
+
 import os
 
 

@@ -1,4 +1,4 @@
-"""Gerar a aplicação web."""
+"""Gerador da aplicação web."""
 
 from shiny import App, Inputs, Outputs, Session, render, ui, req, reactive
 from busca.buscador import processar_textgrid
